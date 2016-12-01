@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("myApp.news",[])}(),function(){"use strict";function n(){console.log("news ctrl")}angular.module("myApp.news").controller("newsCtrl",n),n.$inject=[]}();
