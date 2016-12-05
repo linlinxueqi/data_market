@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("myApp.gallery",[])}(),function(){"use strict";function l(){}angular.module("myApp.gallery").controller("galleryCtrl",l),l.$inject=[]}();

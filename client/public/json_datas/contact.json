@@ -1,0 +1,11 @@
+{
+	"codes":10000,
+	"data":{
+		"contact":{
+			"desc":"Lorem Ipsum is the common name dummy text often used in the design, printing, and type setting industriescommon name dummy text often used in the design, printing, and type setting industries. ",
+			"localtion":" 756 globel Place, Australia.",
+			"tel":"+123 2222 222",
+			"email":"mail@example.com"
+		}
+	}
+}

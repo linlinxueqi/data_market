@@ -1,1 +1,0 @@
-!function(){"use strict";angular.module("myApp.aboutus",[])}(),function(){"use strict";function u(){console.log("这里是about us ctrl 部分")}angular.module("myApp.aboutus").controller("aboutUsCtrl",u),u.$inject=[]}();

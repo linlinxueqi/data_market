@@ -8,16 +8,21 @@ router.get('/', function(req, res, next) {
 router.get('/test', function(req, res, next) {
   res.render('test');
 });
-router.get('/sign_in', function(req, res, next) {
+router.get('/gallery', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/detail', function(req, res, next) {
+router.get('/about', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/news', function(req, res, next) {
+router.get('/home', function(req, res, next) {
   res.render('index');
 });
+
+router.get('/contact', function(req, res, next) {
+  res.render('index');
+});
+
 
 module.exports = router;

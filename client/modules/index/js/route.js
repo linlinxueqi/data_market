@@ -24,18 +24,32 @@
 				controller:'signInCtrl',
 				controllerAs:'vm'
 			})
-			//新闻页面
-			.state('news',{
-				url:'/news',
-				templateUrl : '/modules/news/views/news.html',
-				controller:'newsCtrl',
+			//首页
+			.state('home',{
+				url:'/home',
+				templateUrl : '/modules/home/views/home.html',
+				controller:'homeCtrl',
 				controllerAs:'vm'
 			})
-			//detail
-			.state('detail',{
-				url:'/detail',
-				templateUrl : '/modules/detail/views/detail.html',
-				controller:'detailCtrl',
+			//about
+			.state('about',{
+				url:'/about',
+				templateUrl : '/modules/about/views/about.html',
+				controller:'aboutCtrl',
+				controllerAs:'vm'
+			})
+			//gallery
+			.state('gallery',{
+				url:'/gallery',
+				templateUrl : '/modules/gallery/views/gallery.html',
+				controller:'galleryCtrl',
+				controllerAs:'vm'
+			})
+			//contact
+			.state('contact',{
+				url:'/contact',
+				templateUrl : '/modules/contact/views/contact.html',
+				controller:'contactCtrl',
 				controllerAs:'vm'
 			});
 

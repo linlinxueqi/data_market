@@ -3,24 +3,130 @@
 <head>
 	<meta charset="UTF-8">
 	<base href="/">
-	<title>首页</title>
+	<title>angular首页</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-	<h1>这里是首页的内容区域，改变了111</h1>
-	<a href="/about_us">about_us</a>
-	<a href="/news">news</a>
-	<a href="/detail">detail</a>
+	<header class="common-header">
+		<div class="head-line"></div>
+		<!-- nav -->
+		<div class="head-nav">
+	        <ul class="nav navbar-nav nav-list fixClear">
+	        	<li class="nav-logo"><a href="#">Framer</a></li>
+	            <li class="active"><a href="#">Home</a></li>
+	            <li><a href="#">About</a></li>
+	            <li><a href="#">Code</a></li>
+	            <li><a href="#">Code</a></li>
+	            <li><a href="#">Code</a></li>
+	      </ul>
+	  	</div>
+		<!-- banner -->
+
+		<div id="carousel-example-generic" class="carousel slide head-banner" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner banner-inner" role="listbox">
+			    <div class="item active">
+			        <div class="carousel-caption">
+			        	<h2>Lorem ipsum simply dummy text</h2>
+			        	
+			        </div>
+			    </div>
+			    <div class="item">
+			      <div class="carousel-caption">
+			        Lorem ipsum simply dummy text2222
+			      </div>
+			    </div>
+			   	<div class="item">
+			      <div class="carousel-caption">
+			        Lorem ipsum simply dummy text333
+			      </div>
+			    </div>
+			</div>
+
+			  <!-- Controls -->
+			<a class="left carousel-control" href="javascript:;" role="button" data-slide="prev">
+			   <span class="glyphicon glyphicon-chevron-left" style="font-size:60px;"></span>
+			   <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control right-control" href="javascript:;" role="button" data-slide="next">
+			   <span class="glyphicon glyphicon-chevron-right" style="font-size:60px;"></span>
+			   <span class="sr-only">Next</span>
+			</a>
+		</div>
+		<p class="head-p">Vero eos at et accusamus et iusto odio
+    	 dignissimos ducimus qui blanditiis praesentium
+    	  voluptatum deleniti atque corrupti quos dolores 
+    	  et quas molestias excepturi sint occaecat officia 
+    	  deserunt mollitia laborum et dolorum fuga.
+    	</p>
+
+    	<div class="common-btn">
+    		<div class="white-btn">Learn More</div>
+    		<div class="orange-btn">Click</div>
+    	</div>
+	</header>
 	<div ui-view></div>
+
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3">
+				<h3>contact us</h3>
+			</div>
+			<div class="col-md-3">
+				<h3>contact us</h3>
+				<ul>
+					<li><a href="#">Vestibulum felis</a></li>
+					<li><a href="#">Vestibulum felis</a></li>
+					<li><a href="#">Vestibulum felis</a></li>
+					<li><a href="#">Vestibulum felis</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h3>contact us</h3>
+				<ul>
+					<li><a href="#">Vestibulum felis</a></li>
+					<li><a href="#">Vestibulum felis</a></li>
+					<li><a href="#">Vestibulum felis</a></li>
+					<li><a href="#">Vestibulum felis</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h3>contact us</h3>
+				<p class="footer-contact">Pelleesque conquat dignissim lacus quis altrcies.</p>
+				<div class="footer-lianxi">
+					<p>Tel : 800-255-9999</p>
+					<p>
+						Fax : 1234 568
+					</p>
+					<p>
+						Email : <span>mail@example.com</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-tips">
+		Copyright © 2015.Company name All rights reserved. <span>网页版</span>
+	</div>
 	<script type="text/javascript" src="/vendor/angular.min.js"></script>
 	<script type="text/javascript" src="/vendor/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="/vendor/ng-rap.min.js"></script>
 	<script type="text/javascript" src="/vendor/angular-local-storage.js"></script>
 	<script type="text/javascript" src="/vendor/ui-bootstrap-angular/ui-bootstrap-tpls.js"></script>
 	<script type="text/javascript" src="/assets/js/index.js"></script>
-	<script type="text/javascript" src="/assets/js/account.js"></script>
-	<script type="text/javascript" src="/assets/js/news.js"></script>
-	<script type="text/javascript" src="/assets/js/detail.js"></script>
 
+
+	<script type="text/javascript" src="/assets/components/js/filters.js"></script>
+
+	<!-- <script type="text/javascript" src="/assets/js/account.js"></script> -->
+	<!-- <script type="text/javascript" src="/assets/js/news.js"></script> -->
+	<script type="text/javascript" src="/assets/js/home.js"></script>
+	<script type="text/javascript" src="/assets/js/about.js"></script>
+	<script type="text/javascript" src="/assets/js/gallery.js"></script>
+	<script type="text/javascript" src="/assets/js/contact.js"></script>
+	
 
 </body>
 </html>

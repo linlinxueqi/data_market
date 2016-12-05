@@ -1,0 +1,114 @@
+<!-- <div class="home-welcome">
+	<h2 class="common-title">welcome</h2>
+	<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit ultricies libero</strong></p>
+	<p class="welcome-desc">
+		Suspendisse laoreet convallis ultricies. In facilisis erat nibh, vitae venenatis quam malesuada vel. Nunc ultricies libero et ultrices venenatis. Nulla varius egestas ultrices. Nulla a tempus lacus, sit amet iaculis odio. Sed nec diam a turpis tempor fermentum. Mauris ut ultricies lorem. Fusce pharetra suscipit eros, quis dignissim quam placerat nec
+	</p>
+	<div class="welcome-img">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="/assets/images/img1.jpg" alt="">
+			</div>
+			 <div class="col-md-6">
+			 	<img src="/assets/images/img2.jpg" alt="">
+			 </div>
+		</div>
+		
+	</div>
+	
+</div>
+ -->
+<div class="home-welcome">
+	<h2 class="common-title">{{vm.welcomeName}}</h2>
+	<p><strong>{{vm.welcomeTitle}}</strong></p>
+	<p class="welcome-desc">{{vm.welcomeDesc}}</p>
+	<div class="welcome-img">
+		<div class="row">
+			<div class="col-md-6" ng-repeat="image in vm.welcomeImages">
+				<img ng-bsrc="{{image}}" alt="">
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<!-- 背景图片部分 -->
+<div class="home-desc">
+	<h3 class="common-title">Lorem Ipsum is has a moreless</h3>
+	<p>voluptates repudiandae Integer dolore lorem ipsum was popularised In sit amet sapien eros magna aliqua Temporibus autem quibusdam et aut officiis debitis aut
+					rerum necessitatibus saepe eveniet</p>
+</div>
+
+
+<!-- offer部分 -->
+<div class="home-offer">
+	<div class="offer-line"></div>
+	<h3 class="common-title">what we offer</h3>
+
+	<div class="container">
+		<div class="row  offer-content">		
+			<div class="col-md-7 right offer-col">
+				<span>Magnam aliquam quaerateets</span>
+				<span class="glyphicon glyphicon-tree-deciduous"></span>
+			</div>
+			 <div class="col-md-5 left offer-col">
+			 	<span></span>
+				<span>Magnam aliquam quaerateets</span>
+			 </div>
+		</div>
+		<div class="row">		
+			<div class="col-md-7 right offer-col">
+				<span>Magnam aliquam quaerateets</span>
+				<span></span>
+			</div>
+			 <div class="col-md-5 left offer-col">
+			 	<span></span>
+				<span>Magnam aliquam quaerateets</span>
+			 </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- what we do 部分 -->
+<div class="home-about">
+	<div class="container row">
+		<div class="col-md-7">
+			<h3 class="common-title">what we do</h3>
+			<div></div>
+		</div>
+		<div class="col-md-5 special">
+			<h3 class="common-title">Our specialization</h3>
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+			<h6>Our facilities</h6>
+			<div class="progress">
+			  	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+			        <span class="">60%</span>
+			  	</div>
+			</div>
+			<h6>Our facilities</h6>
+			<div class="progress">
+			  	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+			        <span class="">80%</span>
+			  	</div>
+			</div>
+			<h6>Our facilities</h6>
+			<div class="progress">
+			  	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+			        <span class="">90%</span>
+			  	</div>
+			</div>
+			<h6>Our facilities</h6>
+			<div class="progress">
+			  	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+			        <span class="">75%</span>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

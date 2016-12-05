@@ -6,8 +6,10 @@
 		'ngRap',
 		'LocalStorageModule',
 		'ui.bootstrap',
-		'myApp.account',
-		'myApp.news',
-		'myApp.detail'
+		'myApp.home',
+		'myApp.about',
+		'myApp.gallery',
+		'myApp.contact',
+		'myApp.filters'
 		]);
 })();

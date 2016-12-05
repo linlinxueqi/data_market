@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("myApp.filters",[])}(),function(){"use strict";function t(){var t=function(t){if("undefined"!=typeof t){var r=t.split(" ");return r.forEach(function(t,e){r[e].charAt(0).toUpperCase()}),r.join(" ")}return t};return t}angular.module("myApp.filters").filter("firstUpperCaseFilter",t),t.$inject=[]}();

@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+.fixClear{
+	clear:both;
+	zoom:1;
+}
+.fixClear:after{
+	content:"";
+	display: inline-block;
+	height: 0;
+	clear: both;
+}
+
+//公用按钮
+.common-btn{
+	margin-left:30%;
+	margin-top: 50px;
+	.white-btn,.orange-btn{
+		border:2px solid rgb(232,128,16);
+		height: 47px;
+		width:255px;
+		display: inline-block;
+		line-height: 47px;
+		font-size: 16px;
+		text-align: center;
+		color: #fff;
+		margin-right:30px;
+		transition:all .3s;
+	}
+	.white-btn{
+		border:2px solid #fff;
+		color: rgb(232,128,16);	
+	}
+	.orange-btn{
+		background-color: rgb(232,128,16); 
+	}
+	.white-btn:hover{
+		border: 2px solid rgb(232,128,16);
+		background-color: rgb(232,128,16);
+		color: #fff;
+	}
+	.orange-btn:hover{
+		border: 2px solid #fff;
+		background-color: transparent;
+		color: rgb(232,128,16);
+	}
+}
+
+
+
+//板块一级标题
+.common-title{
+	margin-top: 50px;
+	font-size:70px;
+	color:rgb(232,128,16);
+	text-align: center;
+}

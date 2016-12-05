@@ -1,1 +1,0 @@
-!function(){"use strict";angular.module("myApp.detail",[])}(),function(){function l(){console.log("11111")}angular.module("myApp.detail").controller("detailCtrl",l),l.$inject=[]}();

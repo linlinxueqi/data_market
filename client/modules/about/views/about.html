@@ -1,0 +1,85 @@
+
+<!-- about us 部分 -->
+<!-- <div class="about-us">
+	<h3 class="common-title">About Us</h3>
+	<div class="row">
+		<div class="col-md-7">
+			<img src="/assets/images/img3.jpg" alt="">
+		</div>
+		<div class="col-md-5">
+			<p class="us-desc">Best service atmosphere Pellen tesque vitae tortor id neque fermentum pretium </p>
+			<p>Praesent faucibus rutrum odio at rhoncus. Pellentesque vitae tortor id neque fermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus, tincidunt vitae pellentesque nec, pharetra a orci. Praesent nunc nunc, egestas eget elementum sed; rutrum eget
+			metus! Vestibulum congue congue dui ut porta Pellentesque vitae tortor id neque fermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet Pellentesque vitae tortor id neque fermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet.</p>
+		</div>
+	</div>
+		
+</div> -->
+
+<div class="about-us">
+	<h3 class="common-title">{{vm.aboutUsName}}</h3>
+	<div class="row">
+		<div class="col-md-7">
+			<img ng-src="{{vm.aboutUsImg}}" alt="">
+		</div>
+		<div class="col-md-5">
+			<p class="us-desc">{{vm.aboutUsDesctitle}}</p>
+			<p>{{vm.aboutUsDescDetail}}</p>
+		</div>
+	</div>		
+</div>
+
+<!-- about-img 部分 -->
+<div class="about-img" style='background-image:url("{{vm.aboutDescBgimg}}")'>
+	<h3 class="common-title">{{vm.aboutDescTitle}}</h3>
+	<p>{{vm.aboutDescDetail}}</p>
+</div>
+
+<!-- team部分 -->
+<!-- <div class="about-team">
+	<h3 class="common-title">meet our team</h3>k
+	<div class="row">
+		<div class="col-md-3">
+			<div class="team-img">
+				<img src="/assets/images/img5.jpg" alt="">
+			</div>
+			<span>vaura tegsner</span>
+			<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+		</div>
+		<div class="col-md-3">
+			<div class="team-img">
+				<img src="/assets/images/img6.jpg" alt="">
+			</div>
+			<span>vaura tegsner</span>
+			<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+		</div>
+		<div class="col-md-3">
+			<div class="team-img">
+				<img src="/assets/images/img7.jpg" alt="">
+			</div>
+			<span>vaura tegsner</span>
+			<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+		</div>
+		<div class="col-md-3">
+			<div class="team-img">
+				<img src="/assets/images/img8.jpg" alt="">
+			</div>
+			<span>vaura tegsner</span>
+			<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+		</div>
+	</div>
+</div> -->
+
+
+<div class="about-team">
+	<h3 class="common-title">{{vm.AboutTeamTile}}</h3>
+	<div class="row">
+		<div class="col-md-3" ng-repeat="team in vm.AboutTeamPerson track by $index">
+			<div class="team-img">
+				<img ng-src="{{team.img}}" alt="">
+			</div>
+			<span>{{team.name}}</span>
+			<p>{{team.desc}}</p>
+		</div>
+		
+	</div>
+</div>

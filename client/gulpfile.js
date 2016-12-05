@@ -17,10 +17,23 @@ var del = require('del');
 
 var modulesPath = 'modules/',
 	scriptsDestPath = 'public/assets/js',
+	componentsPath = 'components/',
+	componentsScriptPath = 'public/assets/components/js',
 	htmlDestPath = 'public/modules';
 
 gulp.task('default',function(){
-	runSequence(['html','css','scripts','vendor','watch']);
+	runSequence(['components','html','css','scripts','vendor','jsonDatas','fronts','watch','componentsScripts']);
+});
+
+/**
+ * 将components组件打包
+ * @param  {[type]} ){	gulp.src('images*')		.pipe(gulp.dest('public/assets/images'));} [description]
+ * @return {[type]}                                                                      [description]
+ */
+gulp.task('components',function(){
+	return gulp.src('components/**/*')
+		.pipe(minifyImage())
+		.pipe(gulp.dest('public/assets/components'));
 });
 
 /**
@@ -86,10 +99,59 @@ gulp.task('scripts', function() {
 	return merge(tasks);
 });
 
+
+/**
+ * 对所有的components 下面的js文件进行打包处理
+ * @param  {[type]} ) {	var        folders [description]
+ * @return {[type]}   [description]
+ */
+gulp.task('componentsScripts', function() {
+	var folders = getFolders(componentsPath);
+
+	var tasks = folders.map(function(folder) {
+		// 拼接成 foldername.js
+		// 写入输出
+		// 压缩
+		// 重命名为 folder.min.js
+		// 再一次写入输出
+		return gulp.src(path.join(componentsPath, folder, '/**/*.js'))
+			.pipe(concat(folder + '.js'))
+			// .pipe(gulp.dest(scriptsDestPath))
+			.pipe(uglify())
+			.pipe(rename(folder + '.js'))
+			.pipe(gulp.dest(componentsScriptPath));
+	});
+	return merge(tasks);
+});
+
+
+
 gulp.task('vendor',function(){
 	return gulp.src('vendor/**/*')
 	.pipe(gulp.dest('public/vendor'));
 });
+
+
+/**
+ * 打包json_datas模拟数据
+ * @param  {[type]} ){	return gulp.src('json_datas*')	.pipe(gulp.dest('public/json_datas'));} [description]
+ * @return {[type]}            [description]
+ */
+gulp.task('jsonDatas',function(){
+	return gulp.src('json_datas/**/*')
+	.pipe(gulp.dest('public/json_datas'));
+});
+
+/**
+ * 打包字体图标
+ * @param  {[type]} ){	return gulp.src('json_datas*')	.pipe(gulp.dest('public/json_datas'));} [description]
+ * @return {[type]}            [description]
+ */
+gulp.task('fronts',function(){
+	return gulp.src('less/fonts/*')
+	.pipe(gulp.dest('public/assets/css/fonts'));
+});
+
 
 /**
  * 删除public目录
@@ -110,8 +172,12 @@ gulp.task('watch',function(){
 	gulp.watch([modulesPath+'/**/*.html'],['html']);
 	gulp.watch(['less/main.less'],['css']);
 	gulp.watch(['less/**/*.less'],['css']);
+	gulp.watch(['less/fonts/*'],['fronts']);
 	gulp.watch([modulesPath+'/**/*.js'],['scripts']);
+	gulp.watch([componentsPath+'/**/*.js'],['componentsScripts']);
 	gulp.watch(['vendor/**/*.js'],['vendor']);
+	gulp.watch(['json_datas/**/*.json'],['jsonDatas']);
+	gulp.watch(['components/**/*'],['components']);
 });
 
 

@@ -1,0 +1,32 @@
+{
+	"codes":10000,
+	"data":{
+		"team":{
+			"title":"meet our team",
+			"person":
+					[
+						{
+							"img":"/assets/images/img6.jpg",
+							"name":"vaura tegsner",
+							"desc":"Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary"
+						},
+						{
+							"img":"/assets/images/img7.jpg",
+							"name":"vaura tegsner111",
+							"desc":"Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary"
+						},
+						{
+							"img":"/assets/images/img8.jpg",
+							"name":"vaura tegsner222",
+							"desc":"Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary"
+						},
+						{
+							"img":"/assets/images/img5.jpg",
+							"name":"vaura tegsner",
+							"desc":"Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary"
+						}
+					]
+		}
+	}
+	
+}

@@ -1,0 +1,45 @@
+<div class="contact-find">
+	<div class="content">
+		<h3 class="common-title">how to find us</h3>
+		<div class="find-map">
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="contact-touch">
+	<div class="content">
+		 <h3 class="common-title">get in touch</h3>
+		 <div class="container">
+		 	<div class="col-md-7">
+		 		<form class="touch-form">
+		 		 	<div class="fixClear">
+		 		 		<div class="col-md-4 touch-input">
+			 				<input  placeholder="Name">
+			 			</div>
+			 			<div class="col-md-4 touch-input">
+			 				<input  placeholder="Name">
+			 			</div>
+			 			<div class="col-md-4 touch-input">
+			 				<input  placeholder="Name">
+			 			</div>
+		 		 	</div>
+		 		 	<div class="touch-textarea">
+		 		 		<textarea name="" id="" value="Message"></textarea>
+		 		 	</div>
+		 				
+		 			<div class="btn btn-md touch-btn">submit</div>
+		 		</form>		 		
+		 	</div>
+		 	<div class="col-md-5 touch-connect">
+		 		<p ng-bind="vm.contactData.desc | firstUpperCaseFilter"></p>
+		 		<div>
+		 			<p> <span class="glyphicon glyphicon-map-marker"></span ng-clock>{{vm.contactData.localtion}}</p>
+		 			<p> <span class="glyphicon glyphicon-earphone"></span>{{vm.contactData.tel}}</p>
+		 			<p> <span class="glyphicon glyphicon-envelope"></span>{{vm.contactData.email}}</p>
+		 		</div>
+		 	</div>
+		 </div>
+	</div>
+</div>
